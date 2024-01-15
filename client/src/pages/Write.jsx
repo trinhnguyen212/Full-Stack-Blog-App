@@ -13,7 +13,7 @@ const Write = () => {
           <div className="editorContainer">
             <ReactQuill theme="snow" value={value} onChange={setValue} />
           </div>
-      </div>
+        </div>
       <div className="menu">
         <div className="item">
           <h1>Pulish</h1>
@@ -33,19 +33,17 @@ const Write = () => {
         <div className="item">
           <h1>Category</h1>
           <input type="radio" name="cat" value="art" id="art"/>
-          <label htmlFor="art"> ART</label>
-          <input type="radio" name="cat" value="art" id="art"/>
-          <label htmlFor="art"> ART</label>
-          <input type="radio" name="cat" value="art" id="art"/>
-          <label htmlFor="art"> ART</label>
-          <input type="radio" name="cat" value="art" id="art"/>
-          <label htmlFor="art"> ART</label>
-          <input type="radio" name="cat" value="art" id="art"/>
-          <label htmlFor="art"> ART</label>
-          <input type="radio" name="cat" value="art" id="art"/>
-          <label htmlFor="art"> ART</label>
-          <input type="radio" name="cat" value="art" id="art"/>
-          <label htmlFor="art"> ART</label>
+          <label htmlFor="art"> Art</label>
+          <input type="radio" name="cat" value="science" id="science"/>
+          <label htmlFor="science"> Science</label>
+          <input type="radio" name="cat" value="technology" id="technology"/>
+          <label htmlFor="art"> Technology</label>
+          <input type="radio" name="cat" value="cinema" id="cinema"/>
+          <label htmlFor="art"> Cinema</label>
+          <input type="radio" name="cat" value="design" id="design"/>
+          <label htmlFor="art"> Design</label>
+          <input type="radio" name="cat" value="food" id="food"/>
+          <label htmlFor="art"> Food</label>
         </div>
       </div>
     </div>
