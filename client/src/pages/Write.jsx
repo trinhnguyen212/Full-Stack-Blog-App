@@ -7,13 +7,13 @@ const Write = () => {
   const [value, setValue] = useState('');
   //console.log(value);
   return (
-      <div className="add">
-        <div className="content">
-          <input type="text" placeholder='Title'/>
-          <div className="editorContainer">
-            <ReactQuill theme="snow" value={value} onChange={setValue} />
-          </div>
+    <div className="add">
+      <div className="content">
+        <input type="text" placeholder='Title'/>
+        <div className="editorContainer">
+          <ReactQuill className="editor"  theme="snow" value={value} onChange={setValue} />
         </div>
+      </div>
       <div className="menu">
         <div className="item">
           <h1>Pulish</h1>
@@ -24,30 +24,30 @@ const Write = () => {
             <b>Visibility: </b>Public
           </span>
           <input style={{display:"none"}} type="file" name="" id="file"/>
-          <label htmlFor="file">Upload Image</label>
-          <div className="buttons">
-            <button>Save as a draft</button>
-            <button>Update</button>
-          </div>
+          <label className="file" htmlFor="file">Upload Image</label>
+                <div className="buttons">
+                  <button>Save as a draft</button>
+                  <button>Update</button>
+                </div>
         </div>
         <div className="item">
-          <h1>Category</h1>
+          <h1>Category</h1>   
           <input type="radio" name="cat" value="art" id="art"/>
-          <label htmlFor="art"> Art</label>
+          <label htmlFor="art">Art</label>
           <input type="radio" name="cat" value="science" id="science"/>
-          <label htmlFor="science"> Science</label>
+          <label htmlFor="science">Science</label>
           <input type="radio" name="cat" value="technology" id="technology"/>
-          <label htmlFor="art"> Technology</label>
+          <label htmlFor="technology">Technology</label>
           <input type="radio" name="cat" value="cinema" id="cinema"/>
-          <label htmlFor="art"> Cinema</label>
+          <label htmlFor="cinema">Cinema</label>
           <input type="radio" name="cat" value="design" id="design"/>
-          <label htmlFor="art"> Design</label>
+          <label htmlFor="design">Design</label>
           <input type="radio" name="cat" value="food" id="food"/>
-          <label htmlFor="art"> Food</label>
+          <label htmlFor="food">Food</label>   
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Write
