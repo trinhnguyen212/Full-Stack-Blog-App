@@ -341,8 +341,15 @@ $lightGreen: #b9e7e7;
                             border: 1px solid teal;
                             padding: 3px 5px;
                         }
+                    }
 
-
+                    .cat{
+                       // background-color: aqua;
+                        display: flex;
+                        align-items: center;
+                        gap:2px;
+                        color: teal;
+                        
                     }
                   
                 }
